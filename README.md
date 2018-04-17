@@ -24,10 +24,10 @@ available in the GitHub repository. I did not have time to implement this featur
 
 -->
 
-# cs111-F2017-lab11-starter
+# cs112-S2018-lab10-starter
 
 Designed for use with [GitHub Classroom](https://classroom.github.com/), this
-repository contains the starter for Laboratory 11 in Computer Science 111.
+repository contains the starter for Laboratory 10 in Computer Science 112.
 
 ## Introduction
 
@@ -87,8 +87,8 @@ developed for the following software and versions:
 ## Problems
 
 If you have found a problem with this assignment's provided source code, then
-you can go to the [Computer Science 111 Lab 11
-Starter](https://github.com/Allegheny-Computer-Science-111-F2017/cs111-F2017-lab11-starter)
+you can go to the [Computer Science 112 Lab 10
+Starter](https://github.com/Allegheny-Computer-Science-112-S2018/cs112-S2018-lab10-starter)
 repository and create an issue by clicking the "Issues" tab and then clicking
 the green "New Issue" button. If you have found a problem with the [GatorGrader
 tool](https://github.com/gkapfham/gatorgrader) and the way that it checks you
@@ -97,7 +97,7 @@ its repository. To ensure that your issue is properly resolved, please provide
 as many details as is possible about the problem that you experienced. If you
 discover a problem with the laboratory assignment sheet, then please raise an
 issue in the
-[cs111-F2017-lab-sheets](https://github.com/Allegheny-Computer-Science-111-F2017/cs111-F2017-lab-sheets)
+[cs112-S2018-lab-sheets](https://github.com/Allegheny-Computer-Science-112-S2018/cs112-S2018-lab-sheets)
 repository and mention this assignment.
 
 Students who find, and use the appropriate GitHub issue tracker to correctly
