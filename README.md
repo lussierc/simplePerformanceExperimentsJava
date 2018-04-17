@@ -64,7 +64,10 @@ program's source code if it is a correct program) the program using the command
 
 Please note that this assignment requires you to configure Gradle on your own.
 You should refer to previous laboratory and practical assignments for examples
-about how to complete this task.
+about how to complete this task. There are markers in the Gradle build
+file that give you suggestions for how to customize the configuration. For
+instance, you will need to add in the source code that will support running the
+JUnit test suite that you are required to implement for the final project.
 
 ## Travis
 
