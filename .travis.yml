@@ -1,0 +1,54 @@
+# use Python 3.5 for gatorgrader and switch to Java
+sudo: required
+dist: trusty
+language: python
+python:
+  - '3.5'
+before_install:
+  - jdk_switcher use oraclejdk8
+
+# ensure the use of the latest version of gradle
+before_script:
+  - sudo add-apt-repository -y ppa:cwchien/gradle
+  - sudo apt-get -y update
+  - sudo apt-get -y install gradle-ppa
+
+# install Python3 for GatorGrader in this Java project
+before_install:
+- sudo apt-get update
+- gem install mdl
+
+# command to install dependencies of gatorgrader
+install:
+  - pip install proselint
+  # - ./gatorgrader.sh --start
+  # - cd gatorgrader
+  # - pip3 install --upgrade pip
+  # - pip3 install -r requirements.txt --cache-dir $HOME/.pip-cache
+  # - cd ..
+
+# cache to improve build speed
+before_cache:
+  - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
+  - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
+cache:
+  directories:
+    - $HOME/.pip-cache/
+    - $HOME/.gradle/caches/
+    - $HOME/.gradle/wrapper/
+
+# run checks on Java code through gradle and gatorgrader
+# run checks on Markdown writing through mdl and proselint
+script:
+  # Java
+  # - /usr/bin/gradle --version
+  # - /usr/bin/gradle clean check
+  # - /usr/bin/gradle build
+  # - /usr/bin/gradle run
+  # GatorGrader
+  # - ./gatorgrader.sh --check
+  # Markdown
+  - mdl README.md
+  - mdl writing/reflection.md
+  - proselint README.md
+  - proselint writing/reflection.md
