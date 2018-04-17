@@ -1,3 +1,5 @@
+// TODO: Update this comment if you add additional commands to this file
+//
 // available commands:
 // "gradle check": run checkstyle to assess code quality
 // "gradle clean": clean the project of all derived files
@@ -32,6 +34,8 @@ jar {
 // give the name of the application to run with "gradle run" command
 apply plugin: 'application'
 mainClassName = 'labten.YourClassName'
+
+// TODO: Using previous examples, add configurations for running JUnit
 
 // specify that the application will accept input from System.in
 run {
