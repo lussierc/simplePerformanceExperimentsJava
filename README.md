@@ -98,7 +98,7 @@ its repository. To ensure that your issue is properly resolved, please provide
 as many details as is possible about the problem that you experienced. If you
 discover a problem with the laboratory assignment sheet, then please raise an
 issue in the
-[cs112-S2018-lab-sheets](https://github.com/Allegheny-Computer-Science-112-S2018/cs112-S2018-sheets)
+[cs112-S2018-sheets](https://github.com/Allegheny-Computer-Science-112-S2018/cs112-S2018-sheets)
 repository and mention this assignment.
 
 Students who find, and use the appropriate GitHub issue tracker to correctly
