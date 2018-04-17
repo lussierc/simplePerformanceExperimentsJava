@@ -45,8 +45,9 @@ following GitHub guides: [Mastering
 Markdown](https://guides.github.com/features/mastering-markdown/), [Hello
 World](https://guides.github.com/activities/hello-world/), and [Documenting Your
 Projects on GitHub](https://guides.github.com/features/wikis/). Each of these
-guides will help you to understand how to use both [GitHub](http://github.com) and
-[GitHub Classroom](https://classroom.github.com/).
+guides will help you to understand how to use both [GitHub](http://github.com)
+and [GitHub Classroom](https://classroom.github.com/). Finally, please read all
+of the relevant chapters in the textbook for this course.
 
 ## Commands
 
