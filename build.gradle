@@ -17,19 +17,21 @@ task wrapper(type: Wrapper) {
   gradleVersion = '4.1'
 }
 
+// TODO: Using previous examples, fully update and add to these configurations
+
 // declare values to place in the manifest file in the JAR
 jar {
   manifest {
     attributes(
         'Class-Path': configurations.compile.collect { it.getName() }.join(' '),
-        'Main-Class': 'labeleven.YourClassName'
+        'Main-Class': 'labten.YourClassName'
         )
   }
 }
 
 // give the name of the application to run with "gradle run" command
 apply plugin: 'application'
-mainClassName = 'labeleven.YourClassName'
+mainClassName = 'labten.YourClassName'
 
 // specify that the application will accept input from System.in
 run {
