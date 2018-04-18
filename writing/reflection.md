@@ -1,4 +1,4 @@
-# Reflection by Your Team
+# Proposal by Team 3 (Lancaster Wu, Devin Ho, and Christian Lussier)
 
 This lab required me to explore the real-world applications of computer science.
 Please review the Laboratory Assignment Sheet and add the required details to
