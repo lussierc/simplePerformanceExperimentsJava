@@ -4,14 +4,6 @@ import labten.computation.IterativeFibonacciComputation;
 import labten.computation.RecursiveFibonacciComputation;
 import labten.data.ResultsTable;
 
-/**
- * An Experiment class that can run a campaign of experiments.
- * Note that this class supports running campaigns of experiments for a
- * different number of rounds depending on the strategy.
- *
- * @author Devin Ho, Christian Lussier, Lancaster Wu
- */
-
 public class Experiment {
 
   /** The campaign length for the RecursiveFibonacciComputation. */
