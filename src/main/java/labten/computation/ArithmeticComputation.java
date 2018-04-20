@@ -1,10 +1,5 @@
 package labten.computation;
 
-/**
- * An abstract class defining a contract for all of the computations.
- *
- * @author Gregory M. Kapfhammer
- */
 
 public abstract class ArithmeticComputation {
 
