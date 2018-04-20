@@ -9,11 +9,7 @@ import org.junit.Test;
 
 import java.util.Arrays;
 
-/**
- * A JUnit test suite for the ResultsTable.
- *
- * @author Gregory M. Kapfhammer
- */
+
 
 public class TestResultsTable {
 
