@@ -3,24 +3,13 @@ package labten;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-import labseven.computation.IterativeFibonacciComputation;
-import labseven.computation.RecursiveFibonacciComputation;
+import labten.computation.IterativeFibonacciComputation;
+import labten.computation.RecursiveFibonacciComputation;
 import org.junit.Test;
 
 import java.util.Arrays;
 
-/**
- * A JUnit test suite for the different ArithmeticComputation implementations.
- *
- * <p>Please refer to this web site for the computed values:
- * http://planetmath.org/listoffibonaccinumbers
- *
- * <p>Please note that the computational cost of a certain algorithm
- * prevents the efficient testing of input values. For instance, running
- * this test suite with a new test calling compute(32) could take a long time!
- *
- * @author Gregory M. Kapfhammer
- */
+
 
 public class TestArithmeticComputations {
 
