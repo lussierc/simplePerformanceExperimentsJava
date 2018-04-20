@@ -1,10 +1,5 @@
 package labten.computation;
 
-/**
- * An abstract class for a FibonacciComputation.
- *
- * @author Gregory M. Kapfhammer
- */
 
 public abstract class FibonacciComputation extends ArithmeticComputation {
 
