@@ -1,4 +1,4 @@
-package labseven.computation;
+package labten.computation;
 
 /**
  * IterativeFibonacci -

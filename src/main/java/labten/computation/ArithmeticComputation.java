@@ -1,4 +1,4 @@
-package labseven.computation;
+package labten.computation;
 
 /**
  * An abstract class defining a contract for all of the computations.

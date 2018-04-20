@@ -1,4 +1,4 @@
-package labseven.computation;
+package labten.computation;
 
 /**
  * An abstract class for a FibonacciComputation.
