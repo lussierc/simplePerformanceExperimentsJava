@@ -5,6 +5,8 @@ import static org.junit.Assert.assertTrue;
 
 import labten.computation.IterativeFibonacciComputation;
 import labten.computation.RecursiveFibonacciComputation;
+import practicalsix.computation.IterativeFactorialComputation;
+import practicalsix.computation.RecursiveFactorialComputation;
 import org.junit.Test;
 
 import java.util.Arrays;
