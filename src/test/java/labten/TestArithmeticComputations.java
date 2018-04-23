@@ -9,8 +9,6 @@ import org.junit.Test;
 
 import java.util.Arrays;
 
-
-
 public class TestArithmeticComputations {
 
   /** The objects used in the test cases. **/
@@ -22,7 +20,6 @@ public class TestArithmeticComputations {
   // Factorial Objects
   RecursiveFactorialComputation recursiveFactorial = new RecursiveFactorialComputation();
   IterativeFactorialComputation iterativeFactorial = new IterativeFactorialComputation();
-
 
   /** Fibonacci Test Cases. **/
   @Test
@@ -57,7 +54,7 @@ public class TestArithmeticComputations {
 
   /** Factorial Test Cases. **/
   @Test
-  publi c void testFactorialZero() {
+  public void testFactorialZero() {
     assertEquals(recursiveFactorial.compute(0), 1);
     assertEquals(iterativeFactorial.compute(0), 1);
   }
