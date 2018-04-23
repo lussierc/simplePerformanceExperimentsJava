@@ -26,14 +26,14 @@ jar {
   manifest {
     attributes(
         'Class-Path': configurations.compile.collect { it.getName() }.join(' '),
-        'Main-Class': 'labten.YourClassName'
+        'Main-Class': 'labten.experiment.Main'
         )
   }
 }
 
 // give the name of the application to run with "gradle run" command
 apply plugin: 'application'
-mainClassName = 'labten.YourClassName'
+mainClassName = 'labten.experiment.Main'
 
 // TODO: Using previous examples, add configurations for running JUnit
 
