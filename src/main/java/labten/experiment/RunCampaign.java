@@ -5,12 +5,6 @@ import labten.data.ResultsTable;
 
 import java.util.Random;
 
-/**
- * A RunCampaign class that can run an experiment with a computer.
- *
- * @author Gregory M. Kapfhammer
- */
-
 public class RunCampaign implements Campaign {
 
   /** The starting size for running an experiment campaign. */

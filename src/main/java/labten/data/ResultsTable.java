@@ -74,4 +74,5 @@ public class ResultsTable {
         .replace("]]", "");
     return "Size (#)\tTiming (ms)\tRatio (#)\n" + resultsTextual;
   }
+
 }

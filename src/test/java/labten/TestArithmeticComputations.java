@@ -13,10 +13,18 @@ import java.util.Arrays;
 
 public class TestArithmeticComputations {
 
-  /** Create the two objects used in all of the test suites. */
+  /** The objects used in the test cases. **/
+
+  // Fibonacci Objects
   RecursiveFibonacciComputation recursiveFibonacci = new RecursiveFibonacciComputation();
   IterativeFibonacciComputation iterativeFibonacci = new IterativeFibonacciComputation();
 
+  // Factorial Objects
+  RecursiveFactorialComputation recursiveFactorial = new RecursiveFactorialComputation();
+  IterativeFactorialComputation iterativeFactorial = new IterativeFactorialComputation();
+
+
+  /** Fibonacci Test Cases. **/
   @Test
   public void testFibonacciZero() {
     assertEquals(recursiveFibonacci.compute(0), 0);
@@ -33,7 +41,7 @@ public class TestArithmeticComputations {
   public void testFibonacciTen() {
     assertEquals(recursiveFibonacci.compute(10), 55);
     assertEquals(iterativeFibonacci.compute(10), 55);
-  }
+  }actorial
 
   @Test
   public void testFibonacciFifteen() {
@@ -43,8 +51,32 @@ public class TestArithmeticComputations {
 
   @Test
   public void testFibonacciTwenty() {
-    assertEquals(recursiveFibonacci.compute(20), 6765);
+    assertEquals(reactorialcursiveFibonacci.compute(20), 6765);
     assertEquals(iterativeFibonacci.compute(20), 6765);
   }
 
+  /** Factorial Test Cases. **/
+  @Test
+  publi c void testFactorialZero() {
+    assertEquals(recursiveFactorial.compute(0), 1);
+    assertEquals(iterativeFactorial.compute(0), 1);
+  }
+
+  @Test
+  public void testFactorialOne() {
+    assertEquals(recursiveFactorial.compute(1), 1);
+    assertEquals(iterativeFactorial.compute(1), 1);
+  }
+
+  @Test
+  public void testFactorialFour() {
+    assertEquals(recursiveFactorial.compute(4), 24);
+    assertEquals(iterativeFactorial.compute(4), 24);
+  }
+
+  @Test
+  public void testFactorialSix() {
+    assertEquals(recursiveFactorial.compute(6), 720);
+    assertEquals(iterativeFactorial.compute(6), 720);
+  }
 }
