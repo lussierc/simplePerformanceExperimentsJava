@@ -48,7 +48,7 @@ public class TestArithmeticComputations {
 
   @Test
   public void testFibonacciTwenty() {
-    assertEquals(reactorialcursiveFibonacci.compute(20), 6765);
+    assertEquals(recursiveFibonacci.compute(20), 6765);
     assertEquals(iterativeFibonacci.compute(20), 6765);
   }
 
