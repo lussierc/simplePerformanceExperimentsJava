@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Main {
 
-  //  declare the stuff
+  // Declarations:
   public static int input = -1;
   public static Experiment exp = new Experiment();
   public static Boolean run = true;
@@ -30,7 +30,7 @@ public class Main {
   }
 
   public static void replayMessage () {
-    System.out.println("DO you want to see another experiment or end the program?");
+    System.out.println("Do you want to see another experiment or end the program?");
     System.out.println("Type 5 for restart the program.");
     System.out.println("Type 6 for end the program.");
     //input a main menu option when we have another program
@@ -86,7 +86,7 @@ public class Main {
       Experiment.runRecursiveFactorialExperiment();
       replayMessage ();
       } else if (input == 0) {
-        System.out.println("Thanks very much for using our program!");
+        System.out.println("Thank you very much for using our program!");
         System.out.println("Have a good day!");
         System.exit(0);
       }
