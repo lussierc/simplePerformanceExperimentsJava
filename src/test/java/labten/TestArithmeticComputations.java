@@ -5,6 +5,10 @@ import static org.junit.Assert.assertTrue;
 
 import labten.computation.IterativeFibonacciComputation;
 import labten.computation.RecursiveFibonacciComputation;
+
+import labten.computation.IterativeFactorialComputation;
+import labten.computation.RecursiveFactorialComputation;
+
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -48,7 +52,7 @@ public class TestArithmeticComputations {
 
   @Test
   public void testFibonacciTwenty() {
-    assertEquals(reactorialcursiveFibonacci.compute(20), 6765);
+    assertEquals(recursiveFibonacci.compute(20), 6765);
     assertEquals(iterativeFibonacci.compute(20), 6765);
   }
 
