@@ -19,6 +19,18 @@ task wrapper(type: Wrapper) {
   gradleVersion = '4.1'
 }
 
+// specify the use of JUnit for testing
+dependencies {
+  testCompile 'junit:junit:4.9'
+}
+
+// configure the tests to produce logging output
+test {
+    testLogging {
+        events "passed", "skipped", "failed", "standardOut", "standardError"
+    }
+}
+
 // TODO: Using previous examples, fully update and add to these configurations
 
 // declare values to place in the manifest file in the JAR
