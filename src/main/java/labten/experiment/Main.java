@@ -31,9 +31,9 @@ public class Main {
   }
 
   public static void replayMessage () {
-    System.out.println("Do you want to see another experiment or end the program?");
-    System.out.println("Type 6 for restart the program.");
-    System.out.println("Type 7 for end the program.");
+    System.out.println("Would you want to see another experiment or end the program?");
+    System.out.println("Type 6 to restart the program.");
+    System.out.println("Type 7 to end the program.");
     //input a main menu option when we have another program
     Scanner scanner = new Scanner(System.in);
     while(input < 6 || input > 7) {
@@ -46,8 +46,8 @@ public class Main {
       run = true;
       times++;
     } else {
-      System.out.println("Thanks very much for using our program!");
-      System.out.println("Have a good day!");
+      System.out.println("Thanks for using our program!");
+      System.out.println("Have a great day!");
       System.exit(0);
     }
   }
@@ -69,15 +69,15 @@ public class Main {
         System.out.println("");
         System.out.println("Please choose the types of computations:");
       } else if ( times == 100) {
-        System.out.println("I am glad you made a challenge! Hope you enjoy this most meaningful round");
+        System.out.println("I am glad you are up for a challenge!");
         System.out.println("");
         System.out.println("The options are still the same:");
       } else if ( times == 112) {
-        System.out.println("Hi, I'm glad you found a secrect round");
-        System.out.println("This round we will not do experiment!");
+        System.out.println("Hi, I'm glad you found the secrect round");
+        System.out.println("This round we will not do an experiment!");
         replayMessage();
       } else {
-        System.out.println("This is " + times + " time you run this program");
+        System.out.println("This is " + times + " how many time(s) you have run this program");
         System.out.println("Options:");
       }
       //  give the opptions
@@ -113,8 +113,8 @@ public class Main {
       replayMessage();
       } else if (input == 0) {
         System.out.println("Thank you very much for using our program!");
-        System.out.println("You have used this program " + times + "times");
-        System.out.println("Have a good day!");
+        System.out.println("You have used this program " + times + " time(s).");
+        System.out.println("Have a great day!");
         System.exit(0);
       }
     }
