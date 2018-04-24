@@ -31,7 +31,6 @@ public class RecursiveFibonacciComputation extends FibonacciComputation {
       // Otherwise, return fib(value-1) + fib(value-2)
       // Recursively calls the method and return value
       return compute(value - 2) + compute(value - 1);
-
     }
   }
 }
