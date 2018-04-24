@@ -9,6 +9,7 @@ public class Main {
   public static int input = -1;
   public static Experiment exp = new Experiment();
   public static Boolean run = true;
+  public static int times = 0;
 
   public static int getNextInt(Scanner scanner) {
     int input = -1;
@@ -31,18 +32,19 @@ public class Main {
 
   public static void replayMessage () {
     System.out.println("Do you want to see another experiment or end the program?");
-    System.out.println("Type 5 for restart the program.");
-    System.out.println("Type 6 for end the program.");
+    System.out.println("Type 6 for restart the program.");
+    System.out.println("Type 7 for end the program.");
     //input a main menu option when we have another program
     Scanner scanner = new Scanner(System.in);
-    while(input < 5 || input > 6) {
+    while(input < 6 || input > 7) {
       input = getNextInt(scanner);
-      if(input < 5 || input > 6) {
+      if(input < 6 || input > 7) {
         System.out.println("Your number is not in the desired range.");
       }
     }
-    if(input == 5){
+    if(input == 6){
       run = true;
+      times++;
     } else {
       System.out.println("Thanks very much for using our program!");
       System.out.println("Have a good day!");
@@ -54,21 +56,43 @@ public class Main {
   public static void main(String[] args) throws Exception {
     while(run == true) {
       //  greeting massage
-      System.out.println("Hi, this is RoboKapfhammer. I will assist you with completing performance evaluations of different computations and data types.");
-      System.out.println("");
-      System.out.println("Types of computations:");
+      if (times == 0) {
+        System.out.println("Hi, this is RoboKapfhammer. I will assist you with completing performance evaluations of different computations and data types.");
+        System.out.println("");
+        System.out.println("Please choose the types of computations:");
+      } else if ( times > 0 && times < 3) {
+        System.out.println("Hi again! This is RoboKapfhammer again! ");
+        System.out.println("");
+        System.out.println("Please choose the types of computations again:");
+      } else if ( times > 2 && times < 6) {
+        System.out.println("Hi, it seems like you really enjoy my assistance! This is " + times + " times you run this program!");
+        System.out.println("");
+        System.out.println("Please choose the types of computations:");
+      } else if ( times == 100) {
+        System.out.println("I am glad you made a challenge! Hope you enjoy this most meaningful round");
+        System.out.println("");
+        System.out.println("The options are still the same:");
+      } else if ( times == 112) {
+        System.out.println("Hi, I'm glad you found a secrect round");
+        System.out.println("This round we will not do experiment!");
+        replayMessage();
+      } else {
+        System.out.println("This is " + times + " time you run this program");
+        System.out.println("Options:");
+      }
       //  give the opptions
       System.out.println("Type 1 for IterativeFibonacciComputation Experiment.");
       System.out.println("Type 2 for ResursiveFibonacciComputation Experiment.");
       System.out.println("Type 3 for IterativeFactorialComputation Experiment.");
       System.out.println("Type 4 for ResursiveFactorialComputation Experiment.");
+      System.out.println("Type 5 for not running any Experiment.");
       System.out.println("Type 0 to end the program.");
       System.out.println("Please pick a computation experiment: ");
       //  scan inputs and lead the players to different games
       Scanner scanner = new Scanner(System.in);
-      while(input < 0 || input > 4) {
+      while(input < 0 || input > 5) {
         input = getNextInt(scanner);
-        if(input < 0 || input > 4) {
+        if(input < 0 || input > 5) {
           System.out.println("Your number is not in the desired range.");
         }
       }
@@ -85,8 +109,11 @@ public class Main {
       } else if (input == 4) {
       Experiment.runRecursiveFactorialExperiment();
       replayMessage ();
+      } else if (input == 5){
+      replayMessage();
       } else if (input == 0) {
         System.out.println("Thank you very much for using our program!");
+        System.out.println("You have used this program " + times + "times");
         System.out.println("Have a good day!");
         System.exit(0);
       }
