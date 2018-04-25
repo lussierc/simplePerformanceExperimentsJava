@@ -53,9 +53,9 @@ public class Experiment {
   public static void runRecursiveFibonacciExperiment() {
     RunCampaign runComputationCampaign = new RunCampaign();
     // Create a RecursiveFibonacciComputation and run it in a campaign
-    System.out.println("Suggested caimpaign length: " + RECURSIVE_FIBONACCI_CAMPAIGN_LENGTH);
+    System.out.println("Suggested campaign length: " + RECURSIVE_FIBONACCI_CAMPAIGN_LENGTH);
     System.out.println("WARNING!!!!!");
-    System.out.println("The program may take SO LONG to run if the caimpaign length is above 6.");
+    System.out.println("The program may take VERY long to run if the caimpaign length is above 6.");
     getInputLength();
     RecursiveFibonacciComputation recursiveFibonacci = new RecursiveFibonacciComputation();
     ResultsTable recursiveFibonacciResultsTable =
@@ -70,9 +70,9 @@ public class Experiment {
   public static void runRecursiveFibonacciHashMapExperiment() {
     RunCampaign runComputationCampaign = new RunCampaign();
     // Create a RecursiveFibonacciComputation and run it in a campaign
-    System.out.println("Suggested caimpaign length: 14.");
+    System.out.println("Suggested campaign length: 14.");
     System.out.println("WARNING!!!!!");
-    System.out.println("The Stackoverflow may occur if the campaign length is above 14.");
+    System.out.println("A stack overflow may occur if the campaign length is greater than 14.");
     getInputLength();
     RecursiveFibonacciHashMap recursiveFibonaccihash = new RecursiveFibonacciHashMap();
     ResultsTable recursiveFibonacciHashResultsTable =
@@ -88,7 +88,7 @@ public class Experiment {
   public static void runIterativeFibonacciExperiment() {
     // Add in the implementation of the iterative experiment
     RunCampaign runComputationCampaign = new RunCampaign();
-    System.out.println("Suggested caimpaign length: " + ITERATIVE_FIBONACCI_CAMPAIGN_LENGTH);
+    System.out.println("Suggested campaign length: " + ITERATIVE_FIBONACCI_CAMPAIGN_LENGTH);
     getInputLength();
     // Create a RecursiveFibonacciComputation and run it in a campaign
     IterativeFibonacciComputation iterativeFibonacci = new IterativeFibonacciComputation();
@@ -104,7 +104,7 @@ public class Experiment {
   /** Run the recursive experiment. */
   public static void runRecursiveFactorialExperiment() {
     RunCampaign runComputationCampaign = new RunCampaign();
-    System.out.println("Suggested caimpaign length: " + RECURSIVE_FACTORIAL_CAMPAIGN_LENGTH);
+    System.out.println("Suggested campaign length: " + RECURSIVE_FACTORIAL_CAMPAIGN_LENGTH);
     getInputLength();
     // Create a RecursiveFactorialComputation and run it in a campaign
     RecursiveFactorialComputation recursiveFactorial = new RecursiveFactorialComputation();
@@ -121,7 +121,7 @@ public class Experiment {
   public static void runIterativeFactorialExperiment() {
     // Add in the implementation of the iterative experiment
     RunCampaign runComputationCampaign = new RunCampaign();
-    System.out.println("Suggested caimpaign length: " + ITERATIVE_FACTORIAL_CAMPAIGN_LENGTH);
+    System.out.println("Suggested campaign length: " + ITERATIVE_FACTORIAL_CAMPAIGN_LENGTH);
     getInputLength();
     IterativeFactorialComputation iterativeFactorial = new IterativeFactorialComputation();
     ResultsTable iterativeFactorialResultsTable =
