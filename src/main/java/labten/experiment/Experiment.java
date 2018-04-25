@@ -72,7 +72,7 @@ public class Experiment {
     // Create a RecursiveFibonacciComputation and run it in a campaign
     System.out.println("Suggested caimpaign length: 14.");
     System.out.println("WARNING!!!!!");
-    System.out.println("The Stackoverflow may occur if the caimpaign length is above 14.");
+    System.out.println("The Stackoverflow may occur if the campaign length is above 14.");
     getInputLength();
     RecursiveFibonacciHashMap recursiveFibonaccihash = new RecursiveFibonacciHashMap();
     ResultsTable recursiveFibonacciHashResultsTable =
