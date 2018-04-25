@@ -31,7 +31,7 @@ public class Main {
   }
 
   public static void replayMessage () {
-    System.out.println("Would you want to see another experiment or end the program?");
+    System.out.println("Would you like to perform another experiment or exit the program?");
     System.out.println("Type 6 to restart the program.");
     System.out.println("Type 7 to end the program.");
     //input a main menu option when we have another program
@@ -39,7 +39,7 @@ public class Main {
     while(input < 6 || input > 7) {
       input = getNextInt(scanner);
       if(input < 6 || input > 7) {
-        System.out.println("Your number is not in the desired range.");
+        System.out.println("Your chosen number is not in the desired range.");
       }
     }
     if(input == 6){
@@ -65,11 +65,11 @@ public class Main {
         System.out.println("");
         System.out.println("Please choose the types of computations again:");
       } else if ( times > 2 && times < 6) {
-        System.out.println("Hi, it seems like you really enjoy my assistance! This is " + times + " times you run this program!");
+        System.out.println("Hi, it seems like you really enjoy my assistance! You have continued using the program " + times + " now!");
         System.out.println("");
-        System.out.println("Please choose the types of computations:");
+        System.out.println("Please choose the type of computation:");
       } else if ( times == 100) {
-        System.out.println("I am glad you are up for a challenge!");
+        System.out.println("I am glad you are using the program so much!");
         System.out.println("");
         System.out.println("The options are still the same:");
       } else if ( times == 112) {
