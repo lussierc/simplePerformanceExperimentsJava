@@ -53,6 +53,8 @@ public class Experiment {
     RunCampaign runComputationCampaign = new RunCampaign();
     // Create a RecursiveFibonacciComputation and run it in a campaign
     System.out.println("Suggested caimpaign length: " + RECURSIVE_FIBONACCI_CAMPAIGN_LENGTH);
+    System.out.println("WARNING!!!!!");
+    System.out.println("The program may take SO LONG to run if the caimpaign length is above 6.");
     getInputLength();
     RecursiveFibonacciComputation recursiveFibonacci = new RecursiveFibonacciComputation();
     ResultsTable recursiveFibonacciResultsTable =
