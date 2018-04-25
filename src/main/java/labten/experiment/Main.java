@@ -30,11 +30,14 @@ public class Main {
     return input;
   }
 
+  /** Replay message that will be used when the program is finished running.
+   * Allows the user to chose whether to rerun program or exit it.
+   */
   public static void replayMessage () {
     System.out.println("Would you like to perform another experiment or exit the program?");
-    System.out.println("Type 6 to restart the program.");
-    System.out.println("Type 7 to end the program.");
-    //input a main menu option when we have another program
+    System.out.println("Type 6 to restart the program."); // If user types in "6" the program is rerun
+    System.out.println("Type 7 to end the program."); // If user types in "7" the program is exited.
+    // Scans in user inputs:
     Scanner scanner = new Scanner(System.in);
     while(input < 6 || input > 7) {
       input = getNextInt(scanner);
@@ -52,10 +55,10 @@ public class Main {
     }
   }
 
-  //  main method
+  // Program's main method:
   public static void main(String[] args) throws Exception {
     while(run == true) {
-      //  greeting massage
+      // Greeting message for the program:
       if (times == 0) {
         System.out.println("Hi, this is RoboKapfhammer. I will assist you with completing performance evaluations of different computations and data types.");
         System.out.println("");
@@ -80,7 +83,7 @@ public class Main {
         System.out.println("This is " + times + " how many time(s) you have run this program");
         System.out.println("Options:");
       }
-      //  give the opptions
+      // Give the options for computations the user can use:
       System.out.println("Type 1 for IterativeFibonacciComputation Experiment.");
       System.out.println("Type 2 for ResursiveFibonacciComputation Experiment.");
       System.out.println("Type 3 for IterativeFactorialComputation Experiment.");
@@ -88,7 +91,7 @@ public class Main {
       System.out.println("Type 5 for not running any Experiment.");
       System.out.println("Type 0 to end the program.");
       System.out.println("Please pick a computation experiment: ");
-      //  scan inputs and lead the players to different games
+      // Scan in the user inputs:
       Scanner scanner = new Scanner(System.in);
       while(input < 0 || input > 5) {
         input = getNextInt(scanner);
