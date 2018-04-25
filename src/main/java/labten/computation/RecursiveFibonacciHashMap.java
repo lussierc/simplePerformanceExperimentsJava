@@ -3,11 +3,11 @@ package labten.computation;
 import java.util.HashMap;
 
 
-public class RecursiveFibonacciComputationHashMap extends FibonacciComputation {
+public class RecursiveFibonacciHashMap extends FibonacciComputation {
   private HashMap<Integer, Integer> map;
 
   /** Configure the name of the arithmetic computation. */
-  public RecursiveFibonacciComputationHashMap() {
+  public RecursiveFibonacciHashMap() {
     // Give the name of this computation
     name = "RecursiveFibonacciComputationHashMap";
     map = new HashMap<>();

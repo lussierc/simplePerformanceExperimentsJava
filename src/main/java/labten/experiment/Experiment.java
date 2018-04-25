@@ -4,6 +4,7 @@ import labten.computation.IterativeFibonacciComputation;
 import labten.computation.RecursiveFibonacciComputation;
 import labten.computation.IterativeFactorialComputation;
 import labten.computation.RecursiveFactorialComputation;
+import labten.computation.RecursiveFibonacciHashMap;
 import labten.data.ResultsTable;
 import java.util.Scanner;
 
@@ -63,6 +64,23 @@ public class Experiment {
     System.out.println("Results of an experiment campaign with "
                        + recursiveFibonacci.getName() + ":\n");
     System.out.println(recursiveFibonacciResultsTable.toString());
+    System.out.println();
+  }
+
+  public static void runRecursiveFibonacciHashMapExperiment() {
+    RunCampaign runComputationCampaign = new RunCampaign();
+    // Create a RecursiveFibonacciComputation and run it in a campaign
+    System.out.println("Suggested caimpaign length: 14.");
+    System.out.println("WARNING!!!!!");
+    System.out.println("The Stackoverflow may occur if the caimpaign length is above 14.");
+    getInputLength();
+    RecursiveFibonacciHashMap recursiveFibonaccihash = new RecursiveFibonacciHashMap();
+    ResultsTable recursiveFibonacciHashResultsTable =
+        runComputationCampaign.run(recursiveFibonaccihash, inputlength);
+    System.out.println();
+    System.out.println("Results of an experiment campaign with "
+                       + recursiveFibonaccihash.getName() + ":\n");
+    System.out.println(recursiveFibonacciHashResultsTable.toString());
     System.out.println();
   }
 

@@ -35,17 +35,17 @@ public class Main {
    */
   public static void replayMessage () {
     System.out.println("Would you like to perform another experiment or exit the program?");
-    System.out.println("Type 6 to restart the program."); // If user types in "6" the program is rerun
-    System.out.println("Type 7 to end the program."); // If user types in "7" the program is exited.
+    System.out.println("Type 7 to restart the program."); // If user types in "6" the program is rerun
+    System.out.println("Type 8 to end the program."); // If user types in "7" the program is exited.
     // Scans in user inputs:
     Scanner scanner = new Scanner(System.in);
-    while(input < 6 || input > 7) {
+    while(input < 7 || input > 8) {
       input = getNextInt(scanner);
-      if(input < 6 || input > 7) {
+      if(input < 7 || input > 8) {
         System.out.println("Your chosen number is not in the desired range.");
       }
     }
-    if(input == 6){
+    if(input == 7){
       run = true;
       times++;
     } else {
@@ -85,17 +85,18 @@ public class Main {
       }
       // Give the options for computations the user can use:
       System.out.println("Type 1 for IterativeFibonacciComputation Experiment.");
-      System.out.println("Type 2 for ResursiveFibonacciComputation Experiment.");
+      System.out.println("Type 2 for RecursiveFibonacciComputation Experiment.");
       System.out.println("Type 3 for IterativeFactorialComputation Experiment.");
-      System.out.println("Type 4 for ResursiveFactorialComputation Experiment.");
-      System.out.println("Type 5 for not running any Experiment.");
+      System.out.println("Type 4 for RecursiveFactorialComputation Experiment.");
+      System.out.println("Type 5 for RecursiveFibonacciComputation Experiment with the use of HashMap");
+      System.out.println("Type 6 for not running any Experiment.");
       System.out.println("Type 0 to end the program.");
       System.out.println("Please pick a computation experiment: ");
       // Scan in the user inputs:
       Scanner scanner = new Scanner(System.in);
-      while(input < 0 || input > 5) {
+      while(input < 0 || input > 6) {
         input = getNextInt(scanner);
-        if(input < 0 || input > 5) {
+        if(input < 0 || input > 6) {
           System.out.println("Your number is not in the desired range.");
         }
       }
@@ -112,13 +113,16 @@ public class Main {
       } else if (input == 4) {
       Experiment.runRecursiveFactorialExperiment();
       replayMessage ();
-      } else if (input == 5){
+      } else if (input == 5) {
+      Experiment.runRecursiveFibonacciHashMapExperiment();
       replayMessage();
+      } else if (input == 6) {
+      replayMessage ();
       } else if (input == 0) {
-        System.out.println("Thank you very much for using our program!");
-        System.out.println("You have used this program " + times + " time(s).");
-        System.out.println("Have a great day!");
-        System.exit(0);
+      System.out.println("Thank you very much for using our program!");
+      System.out.println("You have used this program " + times + " time(s).");
+      System.out.println("Have a great day!");
+      System.exit(0);
       }
     }
   }
