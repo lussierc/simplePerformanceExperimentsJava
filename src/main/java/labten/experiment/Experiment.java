@@ -6,6 +6,9 @@ import labten.computation.IterativeFactorialComputation;
 import labten.computation.RecursiveFactorialComputation;
 import labten.computation.RecursiveFibonacciHashMap;
 import labten.data.ResultsTable;
+import labten.list.ArrayList;
+import labten.list.SinglyLinkedList;
+import labten.list.DoublyLinkedList;
 import java.util.Scanner;
 
 public class Experiment {
@@ -23,6 +26,8 @@ public class Experiment {
 
   /** The campaign length for the IterativeFactorialComputation. */
   private static final int ITERATIVE_FACTORIAL_CAMPAIGN_LENGTH = 13;
+
+  private static final int TOSTRING_CAMPAIGN = 20;
 
   /** Run the recursive experiment. */
   public static int getNextInt(Scanner scan) {
@@ -133,4 +138,45 @@ public class Experiment {
     System.out.println();
   }
 
+  public static void runToStringSinglyLinkedListExperiment() {
+    RunCampaign runComputationCampaign = new RunCampaign();
+    System.out.println("Suggested campaign length: " + TOSTRING_CAMPAIGN);
+    getInputLength();
+    SinglyLinkedList<String> singlylinkedlist = new SinglyLinkedList<String>();
+    ResultsTable toStringResultsTable =
+        runComputationCampaign.run(singlylinkedlist, inputlength);
+    // Add the source code to produce the summary output
+    System.out.println();
+    System.out.println("Results of an experiment campaign with toString");
+    System.out.println(toStringResultsTable.toString());
+    System.out.println();
+  }
+
+  public static void runToStringDoublyLinkedListExperiment() {
+    RunCampaign runComputationCampaign = new RunCampaign();
+    System.out.println("Suggested campaign length: " + TOSTRING_CAMPAIGN);
+    getInputLength();
+    DoublyLinkedList<String> doublylinkedlist = new DoublyLinkedList<String>();
+    ResultsTable toStringResultsTable =
+        runComputationCampaign.run(doublylinkedlist, inputlength);
+    // Add the source code to produce the summary output
+    System.out.println();
+    System.out.println("Results of an experiment campaign with toString");
+    System.out.println(toStringResultsTable.toString());
+    System.out.println();
+  }
+
+  public static void runToStringArrayListExperiment() {
+    RunCampaign runComputationCampaign = new RunCampaign();
+    System.out.println("Suggested campaign length: " + TOSTRING_CAMPAIGN);
+    getInputLength();
+    ArrayList<String> arraylist = new ArrayList<String>();
+    ResultsTable toStringResultsTable =
+        runComputationCampaign.run(arraylist, inputlength);
+    // Add the source code to produce the summary output
+    System.out.println();
+    System.out.println("Results of an experiment campaign with toString");
+    System.out.println(toStringResultsTable.toString());
+    System.out.println();
+  }
 }
