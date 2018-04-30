@@ -6,6 +6,8 @@ import static org.junit.Assert.assertTrue;
 import labten.computation.IterativeFibonacciComputation;
 import labten.computation.RecursiveFibonacciComputation;
 
+import labten.computation.RecursiveFibonacciHashMap;
+
 import labten.computation.IterativeFactorialComputation;
 import labten.computation.RecursiveFactorialComputation;
 
@@ -20,40 +22,45 @@ public class TestArithmeticComputations {
   // Fibonacci Objects
   RecursiveFibonacciComputation recursiveFibonacci = new RecursiveFibonacciComputation();
   IterativeFibonacciComputation iterativeFibonacci = new IterativeFibonacciComputation();
-
+  RecursiveFibonacciHashMap recursiveFibonacciHashMap = new RecursiveFibonacciHashMap();
   // Factorial Objects
   RecursiveFactorialComputation recursiveFactorial = new RecursiveFactorialComputation();
   IterativeFactorialComputation iterativeFactorial = new IterativeFactorialComputation();
 
-  /** Fibonacci Test Cases. **/
+  /** Fibonacci & Recursive Fibonacci HashMap Test Cases.**/
   @Test
   public void testFibonacciZero() {
     assertEquals(recursiveFibonacci.compute(0), 0);
     assertEquals(iterativeFibonacci.compute(0), 0);
+    assertEquals(recursiveFibonacciHashMap.compute(0), 0);
   }
 
   @Test
   public void testFibonacciOne() {
     assertEquals(recursiveFibonacci.compute(1), 1);
     assertEquals(iterativeFibonacci.compute(1), 1);
+    assertEquals(recursiveFibonacciHashMap.compute(1), 1);
   }
 
   @Test
   public void testFibonacciTen() {
     assertEquals(recursiveFibonacci.compute(10), 55);
     assertEquals(iterativeFibonacci.compute(10), 55);
+    assertEquals(recursiveFibonacciHashMap.compute(10), 55);
   }
 
   @Test
   public void testFibonacciFifteen() {
     assertEquals(recursiveFibonacci.compute(15), 610);
     assertEquals(iterativeFibonacci.compute(15), 610);
+    assertEquals(recursiveFibonacciHashMap.compute(15), 610);
   }
 
   @Test
   public void testFibonacciTwenty() {
     assertEquals(recursiveFibonacci.compute(20), 6765);
     assertEquals(iterativeFibonacci.compute(20), 6765);
+    assertEquals(recursiveFibonacciHashMap.compute(20), 6765);
   }
 
   /** Factorial Test Cases. **/
