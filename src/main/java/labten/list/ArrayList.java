@@ -1,4 +1,4 @@
-package labnine.list;
+package labten.list;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
@@ -22,7 +22,7 @@ public class ArrayList<E> implements List<E> {
   /** Creates an array list with given initial capacity. */
   @SuppressWarnings({"unchecked"})
   public ArrayList(int capacity) {
-    // TODO: All the correct implementation of the constructor
+    // All the correct implementation of the constructor
     data = (E[])new Object[capacity];
   }
 

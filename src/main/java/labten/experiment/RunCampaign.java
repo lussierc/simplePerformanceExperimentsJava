@@ -37,4 +37,23 @@ public class RunCampaign implements Campaign {
     return results;
   }
 
+  public ResultsTable run(ArithmeticComputation compute, int campaignLength) {
+    int campaignRound = 0;
+    int currentInputSize = INPUT_SIZE_START;
+    ResultsTable results = new ResultsTable(campaignLength);
+    System.out.println("Starting a campaign of experiments with " + compute.getName() + " ...");
+    while (campaignRound < campaignLength) {
+      long timeBefore = System.currentTimeMillis();
+      compute.compute(currentInputSize);
+      long timeAfter = System.currentTimeMillis();
+      long timeElapsed = timeAfter - timeBefore;
+      results.addResult((long)currentInputSize, timeElapsed);
+      System.out.println(IDENTATION + "Running round " + campaignRound
+          + " with input size " + currentInputSize);
+      currentInputSize = currentInputSize * INPUT_GROWTH_FACTOR;
+      campaignRound++;
+    }
+    System.out.println("... Finishing a campaign of experiments with " + compute.getName());
+    return results;
+  }
 }
