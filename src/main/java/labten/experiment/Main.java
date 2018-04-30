@@ -10,6 +10,9 @@ public class Main {
   public static Experiment exp = new Experiment();
   public static Boolean run = true;
   public static int times = 0;
+  public static String asciiART1 = "LOADING...\n██████████████]99%\n";
+  public static String ANSI_RESET = "\u001B[0m";
+  public static String ANSI_WHITE = "\u001B[37m";
 
   public static int getNextInt(Scanner scanner) {
     int input = -1;
@@ -58,22 +61,35 @@ public class Main {
   // Program's main method:
   public static void main(String[] args) throws Exception {
     while(run == true) {
-      // Greeting message for the program:
       if (times == 0) {
-        System.out.println("Hi, this is RoboKapfhammer. I will assist you with completing performance evaluations of different computations and data types.");
-        System.out.println("");
-        System.out.println("Please choose the types of computations:");
+
+      //pause...#1
+      try {
+        Thread.sleep(1);
+      }
+      catch (InterruptedException ex)
+      {
+        // do nothing
+      }
+      System.out.println(ANSI_WHITE + asciiART1 + ANSI_RESET);
+      try {
+        Thread.sleep(4000);
+      }
+      catch (InterruptedException ex)
+      {
+        // do nothing
+      }
+
+        System.out.println("Hi, this is RoboKapfhammer. I will assist you with completing performance evaluations of different computations and data types.\n");
+        System.out.println("Please choose the types of computations:\n");
       } else if ( times > 0 && times < 3) {
-        System.out.println("Hi again! This is RoboKapfhammer again! ");
-        System.out.println("");
+        System.out.println("Hi again! This is RoboKapfhammer again! \n");
         System.out.println("Please choose the types of computations again:");
       } else if ( times > 2 && times < 6) {
-        System.out.println("Hi, it seems like you really enjoy my assistance! You have continued using the program " + times + " now!");
-        System.out.println("");
+        System.out.println("Hi, it seems like you really enjoy my assistance! You have continued using the program " + times + " now!\n");
         System.out.println("Please choose the type of computation:");
       } else if ( times == 100) {
-        System.out.println("I am glad you are using the program so much!");
-        System.out.println("");
+        System.out.println("I am glad you are using the program so much!\n");
         System.out.println("The options are still the same:");
       } else if ( times == 112) {
         System.out.println("Hi, I'm glad you found the secrect round");
@@ -89,9 +105,9 @@ public class Main {
       System.out.println("Type 3 for IterativeFactorialComputation Experiment.");
       System.out.println("Type 4 for RecursiveFactorialComputation Experiment.");
       System.out.println("Type 5 for RecursiveFibonacciComputation Experiment with the use of HashMap");
-      System.out.println("Type 6 for not running any Experiment.");
+      System.out.println("Type 6 for not running any experiment.");
       System.out.println("Type 0 to end the program.");
-      System.out.println("Please pick a computation experiment: ");
+      System.out.println("\n" + ANSI_WHITE + "Please pick a computation experiment: " + ANSI_RESET);
       // Scan in the user inputs:
       Scanner scanner = new Scanner(System.in);
       while(input < 0 || input > 6) {
