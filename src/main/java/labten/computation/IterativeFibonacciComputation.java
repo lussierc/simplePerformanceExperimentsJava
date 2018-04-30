@@ -30,8 +30,6 @@ public class IterativeFibonacciComputation extends FibonacciComputation {
     } else {
       /** "Recursive" Case: iteratively compute
       * Uses a loop to iteratively compute.
-      * Code for loop inspire by https://gist.github.com/meghakrishnamurthy/331bd9addab3dbb1b6a23802b1c6845e
-      * Code also inspired by the book.
       */
       int fibonacci = 1;
       int prevFibonacci = 1;
