@@ -5,14 +5,12 @@ import static org.junit.Assert.assertTrue;
 
 import labten.computation.IterativeFibonacciComputation;
 import labten.computation.RecursiveFibonacciComputation;
-
 import labten.computation.RecursiveFibonacciHashMap;
 
 import labten.computation.IterativeFactorialComputation;
 import labten.computation.RecursiveFactorialComputation;
 
 import org.junit.Test;
-
 import java.util.Arrays;
 
 public class TestArithmeticComputations {
@@ -23,6 +21,7 @@ public class TestArithmeticComputations {
   RecursiveFibonacciComputation recursiveFibonacci = new RecursiveFibonacciComputation();
   IterativeFibonacciComputation iterativeFibonacci = new IterativeFibonacciComputation();
   RecursiveFibonacciHashMap recursiveFibonacciHashMap = new RecursiveFibonacciHashMap();
+
   // Factorial Objects
   RecursiveFactorialComputation recursiveFactorial = new RecursiveFactorialComputation();
   IterativeFactorialComputation iterativeFactorial = new IterativeFactorialComputation();
