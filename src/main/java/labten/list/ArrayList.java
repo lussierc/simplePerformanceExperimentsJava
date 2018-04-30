@@ -215,7 +215,7 @@ public class ArrayList<E> implements List<E> {
    * @return textual representation of the array list
    */
   public String toString() {
-    // TODO: Implement a complete toString method
+    // Implement a complete toString method
     // Reminder: please refer to code in SinglyLinkedList for an example
     StringBuilder sb = new StringBuilder();
     sb.append("(");

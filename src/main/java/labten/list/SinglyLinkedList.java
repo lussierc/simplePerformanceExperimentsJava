@@ -8,6 +8,8 @@ public class SinglyLinkedList<E> implements Cloneable {
    * element and to the subsequent node in the list (or null if this
    * is the last node).
    */
+
+
   private static class Node<E> {
 
     /** The element stored at this node. */
@@ -15,6 +17,7 @@ public class SinglyLinkedList<E> implements Cloneable {
 
     /** A reference to the subsequent node in the list. */
     private Node<E> next;
+
 
     /**
      * Creates a node with the given element and next node.
