@@ -38,17 +38,17 @@ public class Main {
    */
   public static void replayMessage () {
     System.out.println("Would you like to perform another experiment or exit the program?");
-    System.out.println("Type 7 to restart the program."); // If user types in "6" the program is rerun
-    System.out.println("Type 8 to end the program."); // If user types in "7" the program is exited.
+    System.out.println("Type 11 to restart the program."); // If user types in "6" the program is rerun
+    System.out.println("Type 12 to end the program."); // If user types in "7" the program is exited.
     // Scans in user inputs:
     Scanner scanner = new Scanner(System.in);
-    while(input < 7 || input > 8) {
+    while(input < 11 || input > 12) {
       input = getNextInt(scanner);
-      if(input < 7 || input > 8) {
+      if(input < 11 || input > 12) {
         System.out.println("Your chosen number is not in the desired range.");
       }
     }
-    if(input == 7){
+    if(input == 11){
       run = true;
       times++;
     } else {
@@ -105,14 +105,17 @@ public class Main {
       System.out.println("Type 3 for IterativeFactorialComputation Experiment.");
       System.out.println("Type 4 for RecursiveFactorialComputation Experiment.");
       System.out.println("Type 5 for RecursiveFibonacciComputation Experiment with the use of HashMap");
-      System.out.println("Type 6 for not running any experiment.");
+      System.out.println("Type 6 for SinglyLinkedList toString Experiment.");
+      System.out.println("Type 7 for DoublyLinkedList toString Experiment.");
+      System.out.println("Type 8 for ArrayList toString Experiment.");
+      System.out.println("Type 9 for not running any experiment.");
       System.out.println("Type 0 to end the program.");
       System.out.println("\n" + ANSI_WHITE + "Please pick a computation experiment: " + ANSI_RESET);
       // Scan in the user inputs:
       Scanner scanner = new Scanner(System.in);
-      while(input < 0 || input > 6) {
+      while(input < 0 || input > 9) {
         input = getNextInt(scanner);
-        if(input < 0 || input > 6) {
+        if(input < 0 || input > 9 ) {
           System.out.println("Your number is not in the desired range.");
         }
       }
@@ -133,6 +136,14 @@ public class Main {
       Experiment.runRecursiveFibonacciHashMapExperiment();
       replayMessage();
       } else if (input == 6) {
+      Experiment.runToStringSinglyLinkedListExperiment();
+      replayMessage();
+      } else if (input == 7) {
+      Experiment.runToStringDoublyLinkedListExperiment();
+      replayMessage();
+      } else if (input == 8) {
+      Experiment.runToStringArrayListExperiment();
+      } else if (input == 9) {
       replayMessage ();
       } else if (input == 0) {
       System.out.println("Thank you very much for using our program!");
