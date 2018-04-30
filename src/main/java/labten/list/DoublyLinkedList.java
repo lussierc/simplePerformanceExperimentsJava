@@ -237,3 +237,4 @@ public class DoublyLinkedList<E> {
     sb.append(")");
     return sb.toString();
   }
+}

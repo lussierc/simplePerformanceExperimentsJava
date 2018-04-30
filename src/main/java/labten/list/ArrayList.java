@@ -194,7 +194,7 @@ public class ArrayList<E> implements List<E> {
       return false;
     }
     if (getClass() != list.getClass()) {
-      return false;hrow new IndexOutOfBoundsE
+      return false;
     }
     ArrayList<E> other = (ArrayList)list;
     if (size != other.size) {
