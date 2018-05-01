@@ -121,35 +121,36 @@ public class Main {
       }
       /** Run the experiment campaigns for a different number of rounds. */
       if(input == 1) {
-      Experiment.runIterativeFibonacciExperiment();
-      replayMessage ();
+        Experiment.runIterativeFibonacciExperiment();
+        replayMessage ();
       } else if (input == 2) {
-      Experiment.runRecursiveFibonacciExperiment();
-      replayMessage ();
+        Experiment.runRecursiveFibonacciExperiment();
+        replayMessage ();
       } else if (input == 3) {
-      Experiment.runRecursiveFactorialExperiment();
-      replayMessage ();
+        Experiment.runRecursiveFactorialExperiment();
+        replayMessage ();
       } else if (input == 4) {
-      Experiment.runRecursiveFactorialExperiment();
-      replayMessage ();
+        Experiment.runRecursiveFactorialExperiment();
+        replayMessage ();
       } else if (input == 5) {
-      Experiment.runRecursiveFibonacciHashMapExperiment();
-      replayMessage();
+        Experiment.runRecursiveFibonacciHashMapExperiment();
+        replayMessage();
       } else if (input == 6) {
-      Experiment.runToStringSinglyLinkedListExperiment();
-      replayMessage();
+        Experiment.runToStringSinglyLinkedListExperiment();
+        replayMessage();
       } else if (input == 7) {
-      Experiment.runToStringDoublyLinkedListExperiment();
-      replayMessage();
+        Experiment.runToStringDoublyLinkedListExperiment();
+        replayMessage();
       } else if (input == 8) {
-      Experiment.runToStringArrayListExperiment();
+        Experiment.runToStringArrayListExperiment();
+        replayMessage();
       } else if (input == 9) {
-      replayMessage ();
+        replayMessage ();
       } else if (input == 0) {
-      System.out.println("Thank you very much for using our program!");
-      System.out.println("You have used this program " + times + " time(s).");
-      System.out.println("Have a great day!");
-      System.exit(0);
+        System.out.println("Thank you very much for using our program!");
+        System.out.println("You have used this program " + times + " time(s).");
+        System.out.println("Have a great day!");
+        System.exit(0);
       }
     }
   }
