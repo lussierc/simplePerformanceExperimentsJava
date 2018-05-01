@@ -147,10 +147,10 @@ public class Main {
       } else if (input == 9) {
         replayMessage ();
       } else if (input == 0) {
-        System.out.println("Thank you very much for using our program!");
-        System.out.println("You have used this program " + times + " time(s).");
-        System.out.println("Have a great day!");
-        System.exit(0);
+      System.out.println("Thank you very much for using our program!");
+      System.out.println("You have used this program " + times + " time(s).");
+      System.out.println("Have a great day!");
+      System.exit(0);
       }
     }
   }

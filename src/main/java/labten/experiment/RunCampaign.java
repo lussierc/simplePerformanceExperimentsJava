@@ -84,10 +84,11 @@ public class RunCampaign implements Campaign {
   }
 
   public ResultsTable run(ArrayList<String> list, int campaignLength) {
+    ResultsTable results = new ResultsTable(campaignLength);
     int campaignRound = 0;
     int currentInputSize = INPUT_SIZE_START;
-    ResultsTable results = new ResultsTable(campaignLength);
     System.out.println("Starting a campaign of experiments with ArrayList...");
+    long start = System.currentTimeMillis();
     while (campaignRound < campaignLength) {
       long timeBefore = System.currentTimeMillis();
       populateList(list, currentInputSize);
@@ -99,6 +100,13 @@ public class RunCampaign implements Campaign {
           + " with input size " + currentInputSize);
       currentInputSize = currentInputSize * INPUT_GROWTH_FACTOR;
       campaignRound++;
+      long end = start + 30000L; //The end time which is 180000ms or 3 minutse
+      // The computational method will run until the end time (3 minutes) is reached and until the campaign round currently running is completed.
+      if (System.currentTimeMillis() > end) {
+         System.out.println("The computational method has run for more than 3 minutes. Exiting...."); // Tells the user that the computational method has run for over 3 minutes and will now exit.
+         break; //Exits the loop
+      }
+
     }
     System.out.println("... Finishing a campaign of experiments with ArrayList");
     return results;
