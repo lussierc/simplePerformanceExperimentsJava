@@ -63,7 +63,7 @@ public class Experiment {
   public static void runRecursiveFibonacciExperiment() {
     RunCampaign runComputationCampaign = new RunCampaign();
     // Create a RecursiveFibonacciComputation and run it in a campaign
-    System.out.println("Suggested campaign length: " + RECURSIVE_FIBONACCI_CAMPAIGN_LENGTH) + "\nWARNING!!!!!");
+    System.out.println("Suggested campaign length: " + RECURSIVE_FIBONACCI_CAMPAIGN_LENGTH + "\nWARNING!!!!!");
     System.out.println("The program may take VERY long to run if the caimpaign length is above 6.");
     getInputLength();
     RecursiveFibonacciComputation recursiveFibonacci = new RecursiveFibonacciComputation();
