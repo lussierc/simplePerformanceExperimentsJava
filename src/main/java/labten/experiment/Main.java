@@ -1,5 +1,6 @@
 package labten.experiment;
 
+// Needed imports:
 import java.io.File;
 import java.util.Scanner;
 
@@ -14,6 +15,7 @@ public class Main {
   public static String ANSI_RESET = "\u001B[0m";
   public static String ANSI_WHITE = "\u001B[37m";
 
+  //The Scanner for getting integers. Will be used for user choices.
   public static int getNextInt(Scanner scanner) {
     int input = -1;
     int loop = 0;
@@ -23,8 +25,7 @@ public class Main {
           input = scanner.nextInt();
           scanner.nextLine();
           return input;
-        }
-        else{
+        } else {
           System.out.println("Please enter an integer.");
           scanner.nextLine();
         }
@@ -62,7 +63,6 @@ public class Main {
   public static void main(String[] args) throws Exception {
     while(run == true) {
       if (times == 0) {
-
       //pause...#1
       try {
         Thread.sleep(1);
@@ -80,25 +80,27 @@ public class Main {
         // do nothing
       }
 
-        System.out.println("Hi, this is RoboKapfhammer. I will assist you with completing performance evaluations of different computations and data types.\n");
-        System.out.println("Please choose the types of computations:\n");
-      } else if ( times > 0 && times < 3) {
-        System.out.println("Hi again! This is RoboKapfhammer again! \n");
-        System.out.println("Please choose the types of computations again:");
-      } else if ( times > 2 && times < 6) {
-        System.out.println("Hi, it seems like you really enjoy my assistance! You have continued using the program " + times + " now!\n");
-        System.out.println("Please choose the type of computation:");
-      } else if ( times == 100) {
-        System.out.println("I am glad you are using the program so much!\n");
-        System.out.println("The options are still the same:");
-      } else if ( times == 112) {
-        System.out.println("Hi, I'm glad you found the secrect round");
-        System.out.println("This round we will not do an experiment!");
-        replayMessage();
-      } else {
-        System.out.println("This is " + times + " how many time(s) you have run this program");
-        System.out.println("Options:");
-      }
+      // Different responses by "RoboKapfhammer" for each time the program is replayed:
+      System.out.println("Hi, this is RoboKapfhammer. I will assist you with completing performance evaluations of different computations and data types.\n");
+      System.out.println("Please choose the types of computations:\n");
+    } else if ( times > 0 && times < 3) {
+      System.out.println("Hi again! This is RoboKapfhammer again! \n");
+      System.out.println("Please choose the types of computations again:");
+    } else if ( times > 2 && times < 6) {
+      System.out.println("Hi, it seems like you really enjoy my assistance! You have continued using the program " + times + " now!\n");
+      System.out.println("Please choose the type of computation:");
+    } else if ( times == 100) {
+      System.out.println("I am glad you are using the program so much!\n");
+      System.out.println("The options are still the same:");
+    } else if ( times == 112) {
+      System.out.println("Hi, I'm glad you found the secrect round");
+      System.out.println("This round we will not do an experiment!");
+      replayMessage();
+    } else {
+      System.out.println("This is " + times + " how many time(s) you have run this program");
+      System.out.println("Options:");
+    }
+
       // Give the options for computations the user can use:
       System.out.println("Type 1 for IterativeFibonacciComputation Experiment.");
       System.out.println("Type 2 for RecursiveFibonacciComputation Experiment.");
@@ -119,6 +121,7 @@ public class Main {
           System.out.println("Your number is not in the desired range.");
         }
       }
+
       /** Run the experiment campaigns for a different number of rounds. */
       if(input == 1) {
         Experiment.runIterativeFibonacciExperiment();
@@ -147,10 +150,10 @@ public class Main {
       } else if (input == 9) {
         replayMessage ();
       } else if (input == 0) {
-      System.out.println("Thank you very much for using our program!");
-      System.out.println("You have used this program " + times + " time(s).");
-      System.out.println("Have a great day!");
-      System.exit(0);
+        System.out.println("Thank you very much for using our program!");
+        System.out.println("You have used this program " + times + " time(s).");
+        System.out.println("Have a great day!");
+        System.exit(0);
       }
     }
   }
