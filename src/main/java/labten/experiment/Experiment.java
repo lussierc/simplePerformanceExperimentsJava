@@ -63,8 +63,7 @@ public class Experiment {
   public static void runRecursiveFibonacciExperiment() {
     RunCampaign runComputationCampaign = new RunCampaign();
     // Create a RecursiveFibonacciComputation and run it in a campaign
-    System.out.println("Suggested campaign length: " + RECURSIVE_FIBONACCI_CAMPAIGN_LENGTH);
-    System.out.println("WARNING!!!!!");
+    System.out.println("Suggested campaign length: " + RECURSIVE_FIBONACCI_CAMPAIGN_LENGTH) + "\nWARNING!!!!!");
     System.out.println("The program may take VERY long to run if the caimpaign length is above 6.");
     getInputLength();
     RecursiveFibonacciComputation recursiveFibonacci = new RecursiveFibonacciComputation();
@@ -80,9 +79,8 @@ public class Experiment {
   public static void runRecursiveFibonacciHashMapExperiment() {
     RunCampaign runComputationCampaign = new RunCampaign();
     // Create a RecursiveFibonacciComputation and run it in a campaign
-    System.out.println("Suggested campaign length: 14.");
-    System.out.println("WARNING!!!!!");
-    System.out.println("A stack overflow" + ANSI_YELLOW + " WILL " + ANSI_RESET + " occur if the campaign length is greater than 14.");
+    System.out.println("Suggested campaign length: 14.\nWARNING!!!!!");
+    System.out.println("A stack overflow" + ANSI_YELLOW + " WILL " + ANSI_RESET + "occur if the campaign length is greater than 14.");
     getInputLength();
     RecursiveFibonacciHashMap recursiveFibonaccihash = new RecursiveFibonacciHashMap();
     ResultsTable recursiveFibonacciHashResultsTable =
