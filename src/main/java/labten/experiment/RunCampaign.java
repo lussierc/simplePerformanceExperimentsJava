@@ -19,6 +19,10 @@ public class RunCampaign implements Campaign {
   /** The indentation level for the output. */
   private static final String IDENTATION = "  ";
 
+  // Declarations of Colors
+  public static String ANSI_RESET = "\u001B[0m";
+  public static String ANSI_WHITE = "\u001B[37m";
+  public static String ANSI_YELLOW = "\u001B[33m";
 
   /** Run a provided ArithmeticComputation in an experiment campaign for specified rounds. */
   public ResultsTable run(ArithmeticComputation compute, int campaignLength) {
