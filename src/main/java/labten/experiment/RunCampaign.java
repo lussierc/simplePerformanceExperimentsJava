@@ -43,9 +43,10 @@ public class RunCampaign implements Campaign {
          System.out.println("The computational method has run for more than 3 minutes. Exiting...."); // Tells the user that the computational method has run for over 3 minutes and will now exit.
          break; //Exits the loop
     }
-    System.out.println("... Finishing a campaign of experiments with " + compute.getName());
-    return results;
   }
+  System.out.println("... Finishing a campaign of experiments with " + compute.getName());
+  return results;
+}
 
   public ResultsTable run(SinglyLinkedList<String> list, int campaignLength) {
     int campaignRound = 0;
@@ -70,9 +71,10 @@ public class RunCampaign implements Campaign {
          System.out.println("The computational method has run for more than 3 minutes. Exiting...."); // Tells the user that the computational method has run for over 3 minutes and will now exit.
          break; //Exits the loop
     }
-    System.out.println("... Finishing a campaign of experiments with SinglyLinkedList");
-    return results;
   }
+  System.out.println("... Finishing a campaign of experiments with DoublyLinkedList");
+  return results;
+}
 
   public ResultsTable run(DoublyLinkedList<String> list, int campaignLength) {
     int campaignRound = 0;
@@ -97,9 +99,10 @@ public class RunCampaign implements Campaign {
          System.out.println("The computational method has run for more than 3 minutes. Exiting...."); // Tells the user that the computational method has run for over 3 minutes and will now exit.
          break; //Exits the loop
     }
-    System.out.println("... Finishing a campaign of experiments with DoublyLinkedList");
-    return results;
   }
+  System.out.println("... Finishing a campaign of experiments with DoublyLinkedList");
+  return results;
+}
 
   public ResultsTable run(ArrayList<String> list, int campaignLength) {
     ResultsTable results = new ResultsTable(campaignLength);
