@@ -123,7 +123,6 @@ public class Main {
           System.out.println("Your number is not in the desired range.");
         }
       }
-
       /** Run the experiment campaigns for a different number of rounds. */
       if(input == 1) {
         Experiment.runIterativeFibonacciExperiment();
