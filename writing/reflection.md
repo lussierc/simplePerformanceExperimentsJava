@@ -6,14 +6,14 @@ this paragraph.
 
 The second paragraph will discuss the first team member's insights.
 
-The third paragraph will discuss the second team member's (Devin) insights.
-I was responsible for adding the FibonacciRecursive computation into the program.
+The third paragraph will discuss the second team member's (Devin) insights. I
+was responsible for adding the FibonacciRecursive computation into the program.
 The user is asked to input numbers from 0 to 9 to either choose a type of
-computation or to end the program. After that, the user is asked to input
-the number of rounds they want the program to run. If the program takes too
-much time to run the requested amount of rounds, the program will automatically
-stop after 5 minutes. The output displays a results table with the size, timing,
-and number ratio. The challenges included implementing the different terminal
+computation or to end the program. After that, the user is asked to input the
+number of rounds they want the program to run. If the program takes too much
+time to run the requested amount of rounds, the program will automatically stop
+after 5 minutes. The output displays a results table with the size, timing, and
+number ratio. The challenges included implementing the different terminal
 colors and canceling feature.
 
 The fourth paragraph will discuss the third team member's insights.
