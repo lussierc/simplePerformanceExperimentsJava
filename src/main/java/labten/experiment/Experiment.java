@@ -77,7 +77,7 @@ public class Experiment {
     // Create a RecursiveFibonacciComputation and run it in a campaign
     System.out.println("Suggested campaign length: 14.");
     System.out.println("WARNING!!!!!");
-    System.out.println("A stack overflow may occur if the campaign length is greater than 14.");
+    System.out.println("A stack overflow" + ANSI_YELLOW + " WILL " + ANSI_RESET + " occur if the campaign length is greater than 14.");
     getInputLength();
     RecursiveFibonacciHashMap recursiveFibonaccihash = new RecursiveFibonacciHashMap();
     ResultsTable recursiveFibonacciHashResultsTable =
