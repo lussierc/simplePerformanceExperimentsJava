@@ -6,14 +6,16 @@ import java.util.Scanner;
 
 public class Main {
 
-  // Declarations:
+  // Declarations
   public static int input = -1;
   public static Experiment exp = new Experiment();
   public static Boolean run = true;
   public static int times = 0;
   public static String asciiART1 = "LOADING...\n██████████████]99%\n";
+  // Declarations of Colors
   public static String ANSI_RESET = "\u001B[0m";
   public static String ANSI_WHITE = "\u001B[37m";
+  public static String ANSI_YELLOW = "\u001B[33m";
 
   //The Scanner for getting integers. Will be used for user choices.
   public static int getNextInt(Scanner scanner) {
@@ -87,7 +89,7 @@ public class Main {
       System.out.println("Hi again! This is RoboKapfhammer again! \n");
       System.out.println("Please choose the types of computations again:");
     } else if ( times > 2 && times < 6) {
-      System.out.println("Hi, it seems like you really enjoy my assistance! You have continued using the program " + times + " now!\n");
+      System.out.println("Hi, it seems like you really enjoy my assistance! You have continued using the program " + ANSI_YELLOW + times + ANSI_RESET + " now!\n");
       System.out.println("Please choose the type of computation:");
     } else if ( times == 100) {
       System.out.println("I am glad you are using the program so much!\n");
@@ -97,7 +99,7 @@ public class Main {
       System.out.println("This round we will not do an experiment!");
       replayMessage();
     } else {
-      System.out.println("This is " + times + " how many time(s) you have run this program");
+      System.out.println("This is " + ANSI_YELLOW + times + ANSI_RESET + " how many time(s) you have run this program");
       System.out.println("Options:");
     }
 
@@ -151,7 +153,7 @@ public class Main {
         replayMessage ();
       } else if (input == 0) {
         System.out.println("Thank you very much for using our program!");
-        System.out.println("You have used this program " + times + " time(s).");
+        System.out.println("You have used this program " + ANSI_YELLOW + times + ANSI_RESET + " time(s).");
         System.out.println("Have a great day!");
         System.exit(0);
       }
