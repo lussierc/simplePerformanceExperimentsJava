@@ -26,6 +26,7 @@ public class RunCampaign implements Campaign {
     int currentInputSize = INPUT_SIZE_START;
     ResultsTable results = new ResultsTable(campaignLength);
     System.out.println("Starting a campaign of experiments with " + compute.getName() + " ...");
+    long start = System.currentTimeMillis();
     while (campaignRound < campaignLength) {
       long timeBefore = System.currentTimeMillis();
       compute.compute(currentInputSize);
@@ -36,6 +37,11 @@ public class RunCampaign implements Campaign {
           + " with input size " + currentInputSize);
       currentInputSize = currentInputSize * INPUT_GROWTH_FACTOR;
       campaignRound++;
+      long end = start + 300000L; //The end time which is 180000ms or 3 minutse
+      // The performance evaluation will run until the end time (3 minutes) is reached and until the campaign round currently running is completed.
+      if (System.currentTimeMillis() > end) {
+         System.out.println("The computational method has run for more than 3 minutes. Exiting...."); // Tells the user that the computational method has run for over 3 minutes and will now exit.
+         break; //Exits the loop
     }
     System.out.println("... Finishing a campaign of experiments with " + compute.getName());
     return results;
@@ -46,6 +52,7 @@ public class RunCampaign implements Campaign {
     int currentInputSize = INPUT_SIZE_START;
     ResultsTable results = new ResultsTable(campaignLength);
     System.out.println("Starting a campaign of experiments with SinglyLinkedList ...");
+    long start = System.currentTimeMillis();
     while (campaignRound < campaignLength) {
       long timeBefore = System.currentTimeMillis();
       populateList(list, currentInputSize);
@@ -57,6 +64,11 @@ public class RunCampaign implements Campaign {
           + " with input size " + currentInputSize);
       currentInputSize = currentInputSize * INPUT_GROWTH_FACTOR;
       campaignRound++;
+      long end = start + 300000L; //The end time which is 180000ms or 3 minutse
+      // The performance evaluation will run until the end time (3 minutes) is reached and until the campaign round currently running is completed.
+      if (System.currentTimeMillis() > end) {
+         System.out.println("The computational method has run for more than 3 minutes. Exiting...."); // Tells the user that the computational method has run for over 3 minutes and will now exit.
+         break; //Exits the loop
     }
     System.out.println("... Finishing a campaign of experiments with SinglyLinkedList");
     return results;
@@ -67,6 +79,7 @@ public class RunCampaign implements Campaign {
     int currentInputSize = INPUT_SIZE_START;
     ResultsTable results = new ResultsTable(campaignLength);
     System.out.println("Starting a campaign of experiments with DoublyLinkedList ...");
+    long start = System.currentTimeMillis();
     while (campaignRound < campaignLength) {
       long timeBefore = System.currentTimeMillis();
       populateList(list, currentInputSize);
@@ -78,6 +91,11 @@ public class RunCampaign implements Campaign {
           + " with input size " + currentInputSize);
       currentInputSize = currentInputSize * INPUT_GROWTH_FACTOR;
       campaignRound++;
+      long end = start + 300000L; //The end time which is 180000ms or 3 minutse
+      // The performance evaluation will run until the end time (3 minutes) is reached and until the campaign round currently running is completed.
+      if (System.currentTimeMillis() > end) {
+         System.out.println("The computational method has run for more than 3 minutes. Exiting...."); // Tells the user that the computational method has run for over 3 minutes and will now exit.
+         break; //Exits the loop
     }
     System.out.println("... Finishing a campaign of experiments with DoublyLinkedList");
     return results;
@@ -100,12 +118,11 @@ public class RunCampaign implements Campaign {
           + " with input size " + currentInputSize);
       currentInputSize = currentInputSize * INPUT_GROWTH_FACTOR;
       campaignRound++;
-      long end = start + 300L; //The end time which is 180000ms or 3 minutse
+      long end = start + 300000L; //The end time which is 180000ms or 3 minutse
       // The performance evaluation will run until the end time (3 minutes) is reached and until the campaign round currently running is completed.
       if (System.currentTimeMillis() > end) {
-         System.out.println("The computational method has run for more than 3 minutes. Exiting...."); // Tells the user that the computational method has run for over 3 minutes and will now exit.
-         break; //Exits the loop
-
+        System.out.println("The computational method has run for more than 3 minutes. Exiting...."); // Tells the user that the computational method has run for over 3 minutes and will now exit.
+        break; //Exits the loop
       }
     }
     System.out.println("... Finishing a campaign of experiments with ArrayList");
