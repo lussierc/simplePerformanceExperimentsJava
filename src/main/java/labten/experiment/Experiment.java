@@ -29,6 +29,11 @@ public class Experiment {
 
   private static final int TOSTRING_CAMPAIGN = 20;
 
+  // Declarations of Colors
+  public static String ANSI_RESET = "\u001B[0m";
+  public static String ANSI_WHITE = "\u001B[37m";
+  public static String ANSI_YELLOW = "\u001B[33m";
+
   /** Run the recursive experiment. */
   public static int getNextInt(Scanner scan) {
     int input = -1;
