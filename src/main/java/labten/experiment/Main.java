@@ -17,7 +17,7 @@ public class Main {
   public static String ANSI_WHITE = "\u001B[37m";
   public static String ANSI_YELLOW = "\u001B[33m";
 
-  //The Scanner for getting integers. Will be used for user choices.
+  // The Scanner for getting integers. Will be used for user choices.
   public static int getNextInt(Scanner scanner) {
     int input = -1;
     int loop = 0;
@@ -37,8 +37,8 @@ public class Main {
   }
 
   /** Replay message that will be used when the program is finished running.
-   * Allows the user to chose whether to rerun program or exit it.
-   */
+   * Allows the user to chose whether to rerun program or exit it. **/
+
   public static void replayMessage () {
     System.out.println("Would you like to perform another experiment or exit the program?");
     System.out.println("Type 11 to restart the program."); // If user types in "6" the program is rerun
@@ -153,8 +153,7 @@ public class Main {
         replayMessage ();
       } else if (input == 0) {
         System.out.println("Thank you very much for using our program!");
-        System.out.println("You have used this program " + ANSI_YELLOW + times + ANSI_RESET + " time(s).");
-        System.out.println("Have a great day!");
+        System.out.println("You have used this program " + ANSI_YELLOW + times + ANSI_RESET + " time(s). \nHave a great day!");
         System.exit(0);
       }
     }
