@@ -37,7 +37,7 @@ public class RecursiveFibonacciComputation extends FibonacciComputation {
   }
 
   // long data type
-  public long compute3(long value) {
+  public long compute2(int value) {
     // Zero Case:
     // If value == 0 then fib(value) = 0.
     if (value == 0) {
@@ -52,7 +52,7 @@ public class RecursiveFibonacciComputation extends FibonacciComputation {
       // Recursive Case:
       // Otherwise, return fib(value-1) + fib(value-2)
       // Recursively calls the method and return value
-      return compute3(value - 2) + compute3(value - 1);
+      return compute2(value - 2) + compute2(value - 1);
     }
   }
 

@@ -38,7 +38,7 @@ public class IterativeFibonacciComputation extends FibonacciComputation {
   }
 
   // long data type
-  public long compute3(long value) {
+  public long compute2(int value) {
     long requestedFibonacciValue = 1;
     // Zero Case:
     // If value == 0 then fib(value) = 0.

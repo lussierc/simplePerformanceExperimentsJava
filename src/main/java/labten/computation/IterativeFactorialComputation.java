@@ -21,4 +21,18 @@ public class IterativeFactorialComputation extends FactorialComputation {
       return iterative;
     }
   }
+
+
+  public long compute2(int value) {
+    if (value <= 1) {
+      return 1;
+    } else {
+      long iterative = 1;
+      long previousnumber = 1;
+      for (int i = 2; i < value + 1; i++) {
+        iterative = iterative * i;
+      }
+      return iterative;
+    }
+  }
 }
