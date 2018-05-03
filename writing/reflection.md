@@ -4,17 +4,18 @@ This lab required me to explore the real-world applications of computer science.
 Please review the Laboratory Assignment Sheet and add the required details to
 this paragraph.
 
-The second paragraph will discuss the first team member's insights.
+The second paragraph will discuss the first team member's insights (Devin).
 
-The third paragraph will discuss the second team member's (Devin) insights. I
-was responsible for adding the FibonacciRecursive computation into the program.
-The user is asked to input numbers from 0 to 9 to either choose a type of
-computation or to end the program. After that, the user is asked to input the
-number of rounds they want the program to run. If the program takes too much
-time to run the requested amount of rounds, the program will automatically stop
-after 5 minutes. The output displays a results table with the size, timing, and
-number ratio. The challenges included implementing the different terminal
-colors and canceling feature.
+In our group project, I was in charge of implementing the test cases for
+different computational methods as well as debugging. I had to add in the
+recursivefibonacci, iterativeFibonacci, and recursiveFibonacciHashMap test
+cases. They allowed us to check for correctness in our code which establishes a
+confidence in our coding as well. Gradle will then build our program and
+display if the test cases passed or not. Afterwards, debugging was a role in
+which I had to figure out why some implementations of our program was not
+implemented correctly. This may be due to syntax or some other similar error.
+Lastly, I was able to correct the indenting and spacing in our code in order to
+promote clarity and visibility.
 
 The fourth paragraph will discuss the third team member's insights.
 
