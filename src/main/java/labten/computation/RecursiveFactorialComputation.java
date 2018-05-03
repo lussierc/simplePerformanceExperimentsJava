@@ -9,11 +9,22 @@ public class RecursiveFactorialComputation extends FactorialComputation {
   }
 
   /** Recursively calculates the valueth Factorial number to compute. */
+
+  // int data type
   public long compute(int value) {
     if (value <= 1) {
       return 1;
     } else {
       return value * compute(value - 1);
+    }
+  }
+
+  // long data type
+  public long compute3(long value) {
+    if (value <= 1) {
+      return 1;
+    } else {
+      return value * compute3(value - 1);
     }
   }
 }
