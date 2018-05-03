@@ -20,11 +20,11 @@ public class RecursiveFactorialComputation extends FactorialComputation {
   }
 
   // long data type
-  public long compute3(long value) {
+  public long compute2(int value) {
     if (value <= 1) {
       return 1;
     } else {
-      return value * compute3(value - 1);
+      return value * compute2(value - 1);
     }
   }
 }

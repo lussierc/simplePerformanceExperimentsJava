@@ -42,4 +42,26 @@ public class RecursiveFibonacciHashMap extends FibonacciComputation {
     }
   }
 
+  public long compute2(int value) {
+    // Zero Case:
+    // If value == 0 then fib(value) = 0.
+    if (value == 0) {
+      // return a value
+      return value;
+    } else if (value < 2) {
+      // Base Case:
+      // If value <= 2 then fib(value) = 1.
+      // return a value
+      return 1;
+    } else if (map.containsKey(value)) {
+      return map.get(value);
+    } else {
+      // Recursive Case:
+      // Otherwise, return fib(value-1) + fib(value-2)
+      // recursively call the method and return value
+      long fibonacciValue = compute2(value - 2) + compute2(value - 1);
+      map.put(value, (int)fibonacciValue);
+      return fibonacciValue;
+    }
+  }
 }
