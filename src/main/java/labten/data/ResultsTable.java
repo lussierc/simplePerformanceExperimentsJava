@@ -11,6 +11,8 @@ public class ResultsTable {
   /** The two-dimensional array (table) of the results. */
   private long[][] results;
 
+
+
   /** The current row in the table. */
   private int currentRow;
 
@@ -55,6 +57,7 @@ public class ResultsTable {
       } else {
         results[currentRow][RATIO] = 0L;
       }
+
     }
     currentRow++;
   }
@@ -71,7 +74,9 @@ public class ResultsTable {
         .replace(", ", "\t\t")
         .replace("[", "")
         .replace("[[", "")
-        .replace("]]", "");
+        .replace("]]", "")
+        .replaceAll("(?m)^0.*", "")
+        .replaceAll("(?m)^[ \t]*\r?\n", "");
     return "Size (#)\tTiming (ms)\tRatio (#)\n" + resultsTextual;
   }
 
