@@ -75,8 +75,8 @@ public class ResultsTable {
         .replace("[", "")
         .replace("[[", "")
         .replace("]]", "")
-        .replaceAll("(?m)^0.*", "")
-        .replaceAll("(?m)^[ \t]*\r?\n", "");
+        .replaceAll("(?m)^0.*", "") //Gets rid of the content in lines that start with 0.
+        .replaceAll("(?m)^[ \t]*\r?\n", ""); //Gets rid of the empty lines
     return "Size (#)\tTiming (ms)\tRatio (#)\n" + resultsTextual;
   }
 
