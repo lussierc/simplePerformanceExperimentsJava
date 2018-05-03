@@ -16,6 +16,14 @@ after 5 minutes. The output displays a results table with the size, timing, and
 number ratio. The challenges included implementing the different terminal
 colors and canceling feature.
 
-The fourth paragraph will discuss the third team member's insights.
-
-If needed, the fifth paragraph will discuss the third team member's insights.
+Lancaster: I build all the computitions, lists, resultstable, and experiment
+program. The body part of project. I added the method `getNextInt` to check if
+user input is an interger. The replay message to make the program can replay.
+Based on the different times you run the program, you will get different
+openning output. The first difficulty I faced  is in the `Experiment` and
+`RunCampaign`. The different experiments requires different datatypes, so one
+method does not work for all experiments. I created inheritance in RunCampaign
+for ArithmeticComputation, and three different Lists. Then I spent long time
+try to fix the error in the cancle feature by using the iteration go through
+the resultstable which is an 2d array, and remove all the size 0 outputs. I
+somehow failed with many different ways, and Christian later fixed it. 
