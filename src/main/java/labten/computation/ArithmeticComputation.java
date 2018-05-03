@@ -22,4 +22,6 @@ public abstract class ArithmeticComputation {
   /** Require that an ArithmeticComputation provide a method for an int starting point. */
   public abstract long compute(int value);
 
+  public abstract long compute2(int value);
+
 }
