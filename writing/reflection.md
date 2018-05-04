@@ -8,7 +8,7 @@ own reflection of the experience.
 
 I built all the computations, lists, ResultsTable, and experiment program. The
 body part of project. I added the method `getNextInt` to check if user input is
-an integer. The replay message to make the program can replay.  Based on the
+an integer. The replay message to make the program can replay. Based on the
 different times you run the program, you will get different opening output. The
 first difficulty I faced  is in the `Experiment` and `RunCampaign`. The
 different experiments requires different datatypes, so one method does not work
