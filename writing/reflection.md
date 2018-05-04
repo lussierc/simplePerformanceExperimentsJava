@@ -29,7 +29,7 @@ which establishes a confidence in our coding as well. `Gradle` will then build
 our program and display if the test cases passed or not. Afterwards, debugging
 was a role in which I had to figure out why some implementations of our program
 was not implemented correctly. This may be due to syntax or some other similar
-error.  Lastly, I was able to correct the indenting and spacing in our code in
+error. Lastly, I was able to correct the indenting and spacing in our code in
 order to promote clarity and visibility.
 
 ## Christian's Reflection
