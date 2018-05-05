@@ -82,7 +82,7 @@ public class RunCampaign implements Campaign {
       long end = start + 300000L; //The end time which is 180000ms or 3 minutse
       // The performance evaluation will run until the end time (3 minutes) is reached and until the campaign round currently running is completed.
       if (System.currentTimeMillis() > end) {
-         System.out.println("The computational method has run for more than 3 minutes. Exiting...."); // Tells the user that the computational method has run for over 3 minutes and will now exit.
+         System.out.println("The computational method has run for more than 5 minutes. Exiting...."); // Tells the user that the computational method has run for over 3 minutes and will now exit.
          break; //Exits the loop
     }
   }
@@ -111,7 +111,7 @@ public class RunCampaign implements Campaign {
       long end = start + 300000L; //The end time which is 180000ms or 3 minutse
       // The performance evaluation will run until the end time (3 minutes) is reached and until the campaign round currently running is completed.
       if (System.currentTimeMillis() > end) {
-         System.out.println("The computational method has run for more than 3 minutes. Exiting...."); // Tells the user that the computational method has run for over 3 minutes and will now exit.
+         System.out.println("The computational method has run for more than 5 minutes. Exiting...."); // Tells the user that the computational method has run for over 3 minutes and will now exit.
          break; //Exits the loop
     }
   }
@@ -139,7 +139,7 @@ public class RunCampaign implements Campaign {
       long end = start + 300000L; //The end time which is 180000ms or 3 minutse
       // The performance evaluation will run until the end time (3 minutes) is reached and until the campaign round currently running is completed.
       if (System.currentTimeMillis() > end) {
-         System.out.println("The computational method has run for more than 3 minutes. Exiting...."); // Tells the user that the computational method has run for over 3 minutes and will now exit.
+         System.out.println("The computational method has run for more than 5 minutes. Exiting...."); // Tells the user that the computational method has run for over 3 minutes and will now exit.
          break; //Exits the loop
     }
   }
@@ -167,7 +167,7 @@ public class RunCampaign implements Campaign {
       long end = start + 300000L; //The end time which is 180000ms or 3 minutse
       // The performance evaluation will run until the end time (3 minutes) is reached and until the campaign round currently running is completed.
       if (System.currentTimeMillis() > end) {
-        System.out.println("The computational method has run for more than 3 minutes. Exiting...."); // Tells the user that the computational method has run for over 3 minutes and will now exit.
+        System.out.println("The computational method has run for more than 5 minutes. Exiting...."); // Tells the user that the computational method has run for over 3 minutes and will now exit.
         break; //Exits the loop
       }
     }
