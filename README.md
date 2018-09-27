@@ -17,4 +17,5 @@ The following people contributed to this project:
 - Christian Lussier
 - Lancaster Wu
 - Devin Ho
+
 Gregory Kapfhammer also helped by creating this repository.
