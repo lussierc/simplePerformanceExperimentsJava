@@ -53,7 +53,7 @@ public class RunCampaign implements Campaign {
     int campaignRound = 0;
     int currentInputSize = INPUT_SIZE_START;
     ResultsTable results = new ResultsTable(campaignLength);
-    System.out.println("What kind of datatype do uwant to test?");
+    System.out.println("What kind of data type do you want to test?");
     System.out.println("type 13 for int experiment.");
     System.out.println("type 14 for long experiment.");
     Scanner scanner = new Scanner(System.in);
